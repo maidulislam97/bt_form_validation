@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>bootstrap_form</title>
+  </head>
+  <body>
+
+    <!-- form -->
+    <div class="container">
+      <form>
+
+        <div class="mb-3">
+          <label for="email1" class="form-label">Email address</label>
+          <input type="email" class="form-control email1" id="email1" name="email1">
+
+        <div class="mb-3">
+          <label for="password1" class="form-label">Password</label>
+          <input type="password" class="form-control password1" id="password1" name="password1">
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input check1" id="check1" name="check1">
+          <label class="form-check-label" for="check1">Check me out</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="submit" value="submit" class="btn btn-danger">
+
+      </form>
+    </div>
+
+    <!-- Disable_form -->
+    <div class="container1">
+      <form>
+
+        <div class="mb-3">
+          <label for="email1" class="form-label">Email address</label>
+          <input type="email" class="form-control email1" id="email1" name="email1" disabled>
+
+        <div class="mb-3">
+          <label for="password1" class="form-label">Password</label>
+          <input type="password" class="form-control password1" id="password1" name="password1" required>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input check1" id="check1" name="check1">
+          <label class="form-check-label" for="check1">Check me out</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+    </div>
+
+    <!-- Form text -->
+    <div class="container2 bm-2">
+
+      <div class="row g-6 align-items-center">
+        <div class="col-auto">
+          <label for="password2" class="col-form-label ">Password</label>
+        </div>
+
+        <div class="col-auto">
+          <input type="password" id="password2" class="form-control password2">
+        </div>
+
+        <div class="col-auto">
+          <span id="password2" class="form-text">
+            Must be 8-20 characters.
+          </span>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <!-- Form controls -->
+    <div class="container3">
+
+      <div class="mb-3">
+        <label for="formcontrolinput1" class="form-label">Email address</label>
+        <input type="email" class="form-control formcontrolinput1" id="formcontrolinput1" placeholder="yourname@gmail.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="formcontroltextarea1" class="form-label">Fill in this area minimum 100 words</label>
+        <textarea class="form-control formcontroltextarea1" id="formcontroltextarea1" rows="3"></textarea>
+      </div>
+
+    <!-- color -->
+    <div class="container4">
+
+      <label for="colorinput" class="form-label">Choose your color</label>
+      <input type="color" class="form-control form-control-color" id="colorinput" value="#563d7c" title="Choose your color">
+      
+    </div>
+
+    <!-- Datalists -->
+    <div class="container5 bm-3">
+
+      <label for="datalist" class="form-label">Select your subjects</label>
+      <input class="form-control datalist" list="datalistOptions" id="datalist" placeholder="Type to search...">
+      <datalist id="datalistOptions">
+        <option value="Full stack web devlopment">
+        <option value="Graphic & UI Design">
+        <option value="Digital Marketing">
+        <option value="3D Arcitecture Rendering">
+        <option value="Full stack Motion Graphics">
+      </datalist>
+      
+    </div>
+
+    <!-- sizing -->
+    <div class="container6 mb-3">
+      
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg " >
+        <option selected>select your option</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+
+      <select class="form-select form-select-sm" aria-label=".form-select-sm">
+        <option selected>select your option</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+
+    </div>
+
+    <div class="container7">
+
+      <!-- Floating label -->
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="form-floating" placeholder="enter your mail address">
+        <label for="floatingInput">Your email address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      
+    </div>
+
+    <!-- Form grid -->
+    <div class="container8">
+      
+      <div class="row g-3 mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="container9">
+
+      <!-- layout -->
+      <form class="row g-3 mb-3">
+        <div class="col-lg-6">
+          <label for="email4" class="form-label" >Email</label>
+          <input type="email" class="form-control password4" id="email4" name="email4">
+        </div>
+
+        <div class="col-lg-6">
+          <label for="password4" class="form-label" >Password</label>
+          <input type="password" class="form-control password4" id="password4" name="password4">
+        </div>
+
+        <!-- address -->
+        <div class="col-12">
+          <label for="address2" class="form-label" >Address</label>
+          <input type="text" class="form-control address2" id="address2" name="address2" placeholder="enter your address" >
+        </div>
+
+        <!-- city -->
+        <div class="col-lg-6">
+          <label for="city" class="form-label" >City</label>
+          <input type="text" class="form-control city" id="city" name="city">
+        </div>
+
+        <!-- state -->
+        <div class="col-lg-4">
+          <label for="state" class="form-label" >State</label>
+          <select id="state" class="form-select state" name="state" >
+            <option selected>Choose...</option>
+            <option>Dhaka</option>
+            <option>Barishal</option>
+            <option>Rajshahi</option>
+            <option>Khulna</option>
+          </select>
+        </div>
+
+        <!-- zip -->
+        <div class="col-lg-2">
+          <label for="zip" class="form-label" >Zip</label>
+          <input type="text" class="form-control zip" id="zip" name="zip">
+        </div>
+      </form>
+      
+    </div>
+
+    <!-- Validation -->
+    <div class="container10">
+
+      <!-- first name -->
+      <form class="row g-3 needs-validation mb-3" novalidate>
+        <div class="col-md-6">
+          <label for="f_name" class="form-label">Enter your First name</label>
+          <input type="text" class="form-control f_name" id="f_name" placeholder="Enter your First name" name="f_name" required>
+          <div class="valid-feedback">
+            Enter your First name
+          </div>
+          <div class="invalid-feedback">
+              Enter your First name.
+          </div>
+        </div>
+
+        <!-- last name -->
+        <div class="col-md-6">
+          <label for="l_name" class="form-label">Enter your Last name</label>
+          <input type="text" class="form-control l_name" id="l_name" placeholder="Enter your Last name" name="l_name" required>
+          <div class="valid-feedback">
+            Enter your Last name
+          </div>
+          <div class="invalid-feedback">
+              Enter your Last name.
+          </div>
+        </div>
+
+        <!-- email address -->
+        <div class="col-md-12">
+          <label for="email" class="form-label">Enter your Email Address</label>
+          <input type="text" class="form-control email" id="email" placeholder="Enter your Email Address" name="email" required>
+          <div class="valid-feedback">
+            Enter your Email Address
+          </div>
+          <div class="invalid-feedback">
+              Enter your Email Address.
+          </div>
+        </div>
+        
+        
+        <!-- checkbox -->
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <!-- button -->
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+      
+    </div>
+
+
+
+    <!--JS links-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
